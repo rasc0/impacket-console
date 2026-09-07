@@ -90,6 +90,7 @@ class adaConsole(cmd2.Cmd):
         self.poutput(PrintTable.createTable(resultsTable))
 
 
+<<<<<<< Updated upstream:console/console.py
     moduleUseParser = cmd2.Cmd2ArgumentParser(description="Select a module to use by name or id")
     moduleUseParser.add_argument("module", help="Module name (e.g. secretsdump) or numeric id (e.g. 5)", type=str)
 
@@ -118,6 +119,11 @@ class adaConsole(cmd2.Cmd):
 
     def do_options(self):
         pass
+=======
+    # TODO
+    def do_execute(self):
+        """Execute selected module with current config"""
+>>>>>>> Stashed changes:adaconsole/console.py
 
 
 
