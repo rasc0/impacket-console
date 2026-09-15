@@ -4,7 +4,8 @@
       "id": "1",
       "name": "CheckLDAPStatus.py",
       "description": "LDAP signing and channel binding enumeration utility.",
-      "path": "impacket/examples/CheckLDAPStatus.py",
+      "path": "examples/CheckLDAPStatus.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "-dc-ip",
@@ -18,7 +19,8 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-timeout",
@@ -26,7 +28,8 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         }
       ]
     },
@@ -34,7 +37,8 @@
       "id": "2",
       "name": "DumpNTLMInfo.py",
       "description": "Do ntlm authentication and parse information.",
-      "path": "impacket/examples/DumpNTLMInfo.py",
+      "path": "examples/DumpNTLMInfo.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -44,11 +48,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-target-ip",
@@ -68,7 +74,8 @@
       "id": "3",
       "name": "Get-GPPPassword.py",
       "description": "Group Policy Preferences passwords finder and decryptor.",
-      "path": "impacket/examples/Get-GPPPassword.py",
+      "path": "examples/Get-GPPPassword.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -90,11 +97,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -102,11 +111,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "Don't ask for password (useful for -k)"
+          "help": "Don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -130,7 +141,8 @@
       "id": "4",
       "name": "GetADComputers.py",
       "description": "Queries target domain for computer data",
-      "path": "impacket/examples/GetADComputers.py",
+      "path": "examples/GetADComputers.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -140,19 +152,22 @@
       "optional flags": [
         {
           "flag": "-user",
-          "help": "Requests data for specific user"
+          "help": "Requests data for specific user "
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-resolveIP",
-          "help": "Tries to resolve the IP address of computer objects, by performing the nslookup on the DC."
+          "help": "Tries to resolve the IP address of computer objects, by performing the nslookup on the DC.",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -160,11 +175,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -184,7 +201,8 @@
       "id": "5",
       "name": "GetADUsers.py",
       "description": "Queries target domain for users data",
-      "path": "impacket/examples/GetADUsers.py",
+      "path": "examples/GetADUsers.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -194,19 +212,22 @@
       "optional flags": [
         {
           "flag": "-user",
-          "help": "Requests data for specific user"
+          "help": "Requests data for specific user "
         },
         {
           "flag": "-all",
-          "help": "Return all users, including those with no email addresses and disabled accounts. When used with -user it will return user's info even if the account is disabled"
+          "help": "Return all users, including those with no email addresses and disabled accounts. When used with -user it will return user's info even if the account is disabled",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -214,11 +235,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -238,7 +261,8 @@
       "id": "6",
       "name": "GetLAPSPassword.py",
       "description": "Extract LAPS passwords from LDAP",
-      "path": "impacket/examples/GetLAPSPassword.py",
+      "path": "examples/GetLAPSPassword.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -252,11 +276,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-outputfile",
@@ -268,11 +294,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CcnAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CcnAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -288,7 +316,8 @@
         },
         {
           "flag": "-ldaps",
-          "help": "Enable LDAPS (LDAP over SSL). Required when querying a Windows Server 2025domain controller with LDAPS enforced."
+          "help": "Enable LDAPS (LDAP over SSL). Required when querying a Windows Server 2025domain controller with LDAPS enforced.",
+          "takes_value": false
         }
       ]
     },
@@ -296,7 +325,8 @@
       "id": "7",
       "name": "GetNPUsers.py",
       "description": "Queries target domain for users with 'Do not require Kerberos preauthentication' set and export their TGTs for cracking",
-      "path": "impacket/examples/GetNPUsers.py",
+      "path": "examples/GetNPUsers.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -306,7 +336,8 @@
       "optional flags": [
         {
           "flag": "-request",
-          "help": "Requests TGT for users and output them in JtR/hashcat format (default False)"
+          "help": "Requests TGT for users and output them in JtR/hashcat format (default False)",
+          "takes_value": false
         },
         {
           "flag": "-outputfile",
@@ -322,11 +353,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -334,11 +367,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -358,7 +393,8 @@
       "id": "8",
       "name": "GetUserSPNs.py",
       "description": "Queries target domain for SPNs that are running under a user account",
-      "path": "impacket/examples/GetUserSPNs.py",
+      "path": "examples/GetUserSPNs.py",
+      "implemented": true,
       "required flags": [
         {
           "flag": "target",
@@ -376,11 +412,13 @@
         },
         {
           "flag": "-stealth",
-          "help": "Removes the (servicePrincipalName=*) filter from the LDAP query for added stealth. May cause huge memory consumption / errors on large domains."
+          "help": "Removes the (servicePrincipalName=*) filter from the LDAP query for added stealth. May cause huge memory consumption / errors on large domains.",
+          "takes_value": false
         },
         {
           "flag": "-machine-only",
-          "help": "Queries for machine accounts only, by adjusting `objectCategory=person` to `objectCategory=computer`. Active Directory may limit results to 1,000 objects by default. LDAP paging is required to retrieve more."
+          "help": "Queries for machine accounts only, by adjusting `objectCategory=person` to `objectCategory=computer`. Active Directory may limit results to 1,000 objects by default. LDAP paging is required to retrieve more.",
+          "takes_value": false
         },
         {
           "flag": "-usersfile",
@@ -388,7 +426,8 @@
         },
         {
           "flag": "-request",
-          "help": "Requests TGS for users and output them in JtR/hashcat format (default False)"
+          "help": "Requests TGS for users and output them in JtR/hashcat format (default False)",
+          "takes_value": false
         },
         {
           "flag": "-request-user",
@@ -400,7 +439,8 @@
         },
         {
           "flag": "-save",
-          "help": "Saves TGS requested to disk. Format is <username>.ccache. Auto selects -request"
+          "help": "Saves TGS requested to disk. Format is <username>.ccache. Auto selects -request",
+          "takes_value": false
         },
         {
           "flag": "-outputfile",
@@ -408,15 +448,18 @@
         },
         {
           "flag": "-no-rc4",
-          "help": "Does not force RC4-HMAC for the TGT"
+          "help": "Does not force RC4-HMAC for the TGT",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output."
+          "help": "Adds timestamp to every logging output.",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -424,11 +467,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -448,7 +493,8 @@
       "id": "9",
       "name": "addcomputer.py",
       "description": "Adds a computer account to domain",
-      "path": "impacket/examples/addcomputer.py",
+      "path": "examples/addcomputer.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "account",
@@ -470,23 +516,27 @@
         },
         {
           "flag": "-no-add",
-          "help": "Don't add a computer, only set password on existing one."
+          "help": "Don't add a computer, only set password on existing one.",
+          "takes_value": false
         },
         {
           "flag": "-delete",
-          "help": "Delete an existing computer."
+          "help": "Delete an existing computer.",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-method",
-          "help": "Method of adding the computer.SAMR works over SMB.LDAPS has some certificate requirementsand isn't always available."
+          "help": "Method of adding the computer.SAMR works over SMB.SAMR_LDAP creates over SAMR and finalizes dnsHostName/SPNs over LDAPS.LDAP_FINALIZE only finalizes dnsHostName/SPNs over LDAPS for an existing account.LDAPS has some certificate requirementsand isn't always available."
         },
         {
           "flag": "-port",
@@ -506,11 +556,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on account parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on account parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -529,8 +581,9 @@
     {
       "id": "10",
       "name": "atexec.py",
-      "description": "ATSVC example for some functions implemented, creates, enums, runs, delete jobs This example executes a command on the target machine through the Task Scheduler service. Returns the output of such command",
-      "path": "impacket/examples/atexec.py",
+      "description": "",
+      "path": "examples/atexec.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -538,7 +591,7 @@
         },
         {
           "flag": "command",
-          "help": "command to execute at the target"
+          "help": "command to execute at the target "
         }
       ],
       "optional flags": [
@@ -548,15 +601,26 @@
         },
         {
           "flag": "-ts",
-          "help": "adds timestamp to every logging output"
+          "help": "adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-silentcommand",
-          "help": "does not execute cmd.exe to run given command (no output)"
+          "help": "does not execute cmd.exe to run given command (no output)",
+          "takes_value": false
+        },
+        {
+          "flag": "-overflow",
+          "takes_value": false
+        },
+        {
+          "flag": "-author-log",
+          "help": "poison Security Event 4698 Author field with the given value (mutually exclusive with -overflow)"
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-codec"
@@ -567,11 +631,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -591,7 +657,8 @@
       "id": "11",
       "name": "attrib.py",
       "description": "File Attribute Modification Utility implementation.",
-      "path": "impacket/examples/attrib.py",
+      "path": "examples/attrib.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -609,7 +676,8 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -617,11 +685,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "Don't ask for password (useful for -k)"
+          "help": "Don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -645,39 +715,48 @@
         },
         {
           "flag": "-r",
-          "help": "A file or directory that is read-only. For a file, applications can read the file but cannot write to it or delete it. For a directory, applications cannot delete it, but applications can create and delete files from that directory."
+          "help": "A file or directory that is read-only. For a file, applications can read the file but cannot write to it or delete it. For a directory, applications cannot delete it, but applications can create and delete files from that directory.",
+          "takes_value": false
         },
         {
           "flag": "-H",
-          "help": "A file or directory that is hidden. Files and directories marked with this attribute do not appear in an ordinary directory listing."
+          "help": "A file or directory that is hidden. Files and directories marked with this attribute do not appear in an ordinary directory listing.",
+          "takes_value": false
         },
         {
           "flag": "-s",
-          "help": "A file or directory that the operating system uses a part of or uses exclusively."
+          "help": "A file or directory that the operating system uses a part of or uses exclusively.",
+          "takes_value": false
         },
         {
           "flag": "-a",
-          "help": "A file or directory that requires to be archived. Applications use this attribute to mark files for backup or removal."
+          "help": "A file or directory that requires to be archived. Applications use this attribute to mark files for backup or removal.",
+          "takes_value": false
         },
         {
           "flag": "-n",
-          "help": "A file that does not have other attributes set. This flag is used to clear all other flags by specifying it with no other flags set."
+          "help": "A file that does not have other attributes set. This flag is used to clear all other flags by specifying it with no other flags set.",
+          "takes_value": false
         },
         {
           "flag": "-c",
-          "help": "A file or directory that is compressed. For a file, all of the data in the file is compressed. For a directory, compression is the default for newly created files and subdirectories."
+          "help": "A file or directory that is compressed. For a file, all of the data in the file is compressed. For a directory, compression is the default for newly created files and subdirectories.",
+          "takes_value": false
         },
         {
           "flag": "-o",
-          "help": "The data in this file is not available immediately. This attribute indicates that the file data is physically moved to offline storage. This attribute is used by Remote Storage, which is hierarchical storage management software."
+          "help": "The data in this file is not available immediately. This attribute indicates that the file data is physically moved to offline storage. This attribute is used by Remote Storage, which is hierarchical storage management software.",
+          "takes_value": false
         },
         {
           "flag": "-e",
-          "help": "A file or directory that is encrypted. For a file, all data streams in the file are encrypted. For a directory, encryption is the default for newly created files and subdirectories."
+          "help": "A file or directory that is encrypted. For a file, all data streams in the file are encrypted. For a directory, encryption is the default for newly created files and subdirectories.",
+          "takes_value": false
         },
         {
           "flag": "-u",
-          "help": "This attribute indicates that the file or directory should not be kept fully present locally except when being actively accessed. This attribute is for use with hierarchical storage management software."
+          "help": "This attribute indicates that the file or directory should not be kept fully present locally except when being actively accessed. This attribute is for use with hierarchical storage management software.",
+          "takes_value": false
         }
       ]
     },
@@ -685,7 +764,8 @@
       "id": "12",
       "name": "badsuccessor.py",
       "description": "dMSA exploitation tool.",
-      "path": "impacket/examples/badsuccessor.py",
+      "path": "examples/badsuccessor.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "account",
@@ -719,11 +799,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-method",
@@ -743,11 +825,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on account parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on account parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -767,7 +851,8 @@
       "id": "13",
       "name": "changepasswd.py",
       "description": "Change or reset passwords over different protocols.",
-      "path": "impacket/examples/changepasswd.py",
+      "path": "examples/changepasswd.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -777,11 +862,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "adds timestamp to every logging output"
+          "help": "adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "turn DEBUG output ON"
+          "help": "turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-newpass",
@@ -797,7 +884,8 @@
         },
         {
           "flag": "-no-pass",
-          "help": "Don't ask for password (useful for Kerberos, -k)"
+          "help": "Don't ask for password (useful for Kerberos, -k)",
+          "takes_value": false
         },
         {
           "flag": "-altuser",
@@ -817,11 +905,13 @@
         },
         {
           "flag": "-reset",
-          "help": "Try to reset the password with privileges (may bypass some password policies)"
+          "help": "Try to reset the password with privileges (may bypass some password policies)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -836,22 +926,55 @@
     {
       "id": "14",
       "name": "checkMSSQLStatus.py",
-      "description": "Check whether Channel Binding Token (CBT) is enforced on a MSSQL server.",
-      "path": "impacket/examples/checkMSSQLStatus.py",
+      "description": "mssql_cbt_check.py",
+      "path": "examples/checkMSSQLStatus.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
-          "help": "[domain/]username[:password]@target"
+          "help": "[[domain/]username[:password]@]<targetName or address>"
         }
       ],
       "optional flags": [
         {
           "flag": "-port",
-          "help": "MSSQL port to connect to"
+          "help": "Port MSSQL (default: 1433)"
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
+        },
+        {
+          "flag": "-ts",
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
+        },
+        {
+          "flag": "-hashes",
+          "help": "NTLM hashes"
+        },
+        {
+          "flag": "-no-pass",
+          "help": "Don't ask for password (useful with -k)",
+          "takes_value": false
+        },
+        {
+          "flag": "-k",
+          "help": "Use Kerberos authentication (ccache via KRB5CCNAME)",
+          "takes_value": false
+        },
+        {
+          "flag": "-aesKey",
+          "help": "AES key for Kerberos (128 or 256 bits)"
+        },
+        {
+          "flag": "-dc-ip",
+          "help": "IP of the domain controller"
+        },
+        {
+          "flag": "-target-ip",
+          "help": "IP of the target (overrides target name resolution)"
         }
       ]
     },
@@ -859,7 +982,8 @@
       "id": "15",
       "name": "dacledit.py",
       "description": "Python editor for a principal's DACL.",
-      "path": "impacket/examples/dacledit.py",
+      "path": "examples/dacledit.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "identity",
@@ -869,15 +993,18 @@
       "optional flags": [
         {
           "flag": "-use-ldaps",
-          "help": "Use LDAPS instead of LDAP"
+          "help": "Use LDAPS instead of LDAP",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -885,11 +1012,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -953,7 +1082,8 @@
         },
         {
           "flag": "-inheritance",
-          "help": "Enable the inheritance in the ACE flag with CONTAINER_INHERIT_ACE and OBJECT_INHERIT_ACE. Useful when target is a Container or an OU, ACE will be inherited by objects within the container/OU (except objects with adminCount=1)"
+          "help": "Enable the inheritance in the ACE flag with CONTAINER_INHERIT_ACE and OBJECT_INHERIT_ACE. Useful when target is a Container or an OU, ACE will be inherited by objects within the container/OU (except objects with adminCount=1)",
+          "takes_value": false
         }
       ]
     },
@@ -961,7 +1091,8 @@
       "id": "16",
       "name": "dcomexec.py",
       "description": "Executes a semi-interactive shell using the ShellBrowserWindow DCOM object.",
-      "path": "impacket/examples/dcomexec.py",
+      "path": "examples/dcomexec.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -979,15 +1110,18 @@
         },
         {
           "flag": "-nooutput",
-          "help": "whether or not to print the output (no SMB connection created)"
+          "help": "whether or not to print the output (no SMB connection created)",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-codec"
@@ -1006,7 +1140,8 @@
         },
         {
           "flag": "-silentcommand",
-          "help": "does not execute cmd.exe to run given command (no output, cannot run dir/cd/etc.)"
+          "help": "does not execute cmd.exe to run given command (no output, cannot run dir/cd/etc.)",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1014,11 +1149,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1042,7 +1179,8 @@
       "id": "17",
       "name": "describeTicket.py",
       "description": "Ticket describer. Parses ticket, decrypts the enc-part, and parses the PAC.",
-      "path": "impacket/examples/describeTicket.py",
+      "path": "examples/describeTicket.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "ticket",
@@ -1052,11 +1190,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-p",
@@ -1096,7 +1236,8 @@
       "id": "18",
       "name": "dpapi.py",
       "description": "Example for using the DPAPI/Vault structures to unlock Windows Secrets.",
-      "path": "impacket/examples/dpapi.py",
+      "path": "examples/dpapi.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "-t",
@@ -1110,11 +1251,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1122,11 +1265,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1138,7 +1283,8 @@
         },
         {
           "flag": "--export",
-          "help": "export keys to file"
+          "help": "export keys to file",
+          "takes_value": false
         },
         {
           "flag": "-sid",
@@ -1165,6 +1311,10 @@
           "help": "SECURITY hive to parse"
         },
         {
+          "flag": "-t",
+          "help": "The masterkey owner's credentails to ask the DC for decryptionFormat: [[domain/]username[:password]@]<targetName or address>"
+        },
+        {
           "flag": "-vcrd",
           "help": "Vault Credential file"
         },
@@ -1181,6 +1331,10 @@
           "help": "File with binary entropy contents (overwrites -entropy)"
         },
         {
+          "flag": "-outfile",
+          "help": "File to write decrypted data to (if not specified, it will be printed as hexdump)"
+        },
+        {
           "flag": "-entry",
           "help": "Entry index in CREDHIST"
         }
@@ -1190,7 +1344,8 @@
       "id": "19",
       "name": "dpapidump.py",
       "description": "Performs remote extraction of SYSTEM DPAPI credentials and SCCM client secrets.",
-      "path": "impacket/examples/dpapidump.py",
+      "path": "examples/dpapidump.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -1200,11 +1355,13 @@
       "optional flags": [
         {
           "flag": "-creds",
-          "help": "Extract SYSTEM user DPAPI credentials (default: all)"
+          "help": "Extract SYSTEM user DPAPI credentials (default: all)",
+          "takes_value": false
         },
         {
           "flag": "-sccm",
-          "help": "Extract SCCM client credentials (default: all)"
+          "help": "Extract SCCM client credentials (default: all)",
+          "takes_value": false
         },
         {
           "flag": "-userkey",
@@ -1212,11 +1369,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-com-version",
@@ -1236,11 +1395,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1268,11 +1429,16 @@
       "id": "20",
       "name": "esentutl.py",
       "description": "Extensive Storage Engine utility. Allows dumping catalog, pages and tables.",
-      "path": "impacket/examples/esentutl.py",
+      "path": "examples/esentutl.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "databaseFile",
           "help": "ESE to open"
+        },
+        {
+          "flag": "-page",
+          "help": "page to dump"
         },
         {
           "flag": "-table",
@@ -1282,11 +1448,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-page",
@@ -1298,7 +1466,8 @@
       "id": "21",
       "name": "exchanger.py",
       "description": "A tool to abuse Exchange services",
-      "path": "impacket/examples/exchanger.py",
+      "path": "examples/exchanger.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -1308,11 +1477,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG and EXTENDED output ON"
+          "help": "Turn DEBUG and EXTENDED output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-rpc-hostname",
@@ -1324,15 +1495,17 @@
         },
         {
           "flag": "-count",
-          "help": "Request total number of records in each table"
+          "help": "Request total number of records in each table",
+          "takes_value": false
         },
         {
           "flag": "-basic",
-          "help": "Authenticate with Basic Auth instead of NTLM"
+          "help": "Authenticate with Basic Auth instead of NTLM",
+          "takes_value": false
         },
         {
           "flag": "-lookup-type",
-          "help": "R|Lookup type: MINIMAL - Request limited set of fields (default) EXTENDED - Request extended set of fields FULL - Request all fields for each row GUIDS - Request only GUIDs"
+          "help": "R|Lookup type:\n  MINIMAL  - Request limited set of fields (default)\n  EXTENDED - Request extended set of fields\n  FULL     - Request all fields for each row\n  GUIDS    - Request only GUIDs"
         },
         {
           "flag": "-rows-per-request",
@@ -1372,7 +1545,8 @@
       "id": "22",
       "name": "filetime.py",
       "description": "File / Directory Timestamp Querying & Modification Utility implementation.",
-      "path": "impacket/examples/filetime.py",
+      "path": "examples/filetime.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -1390,7 +1564,8 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1398,11 +1573,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "Don't ask for password (useful for -k)"
+          "help": "Don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1426,19 +1603,23 @@
         },
         {
           "flag": "-c",
-          "help": "Change the \"CreationTime\" of the file / directory."
+          "help": "Change the \"CreationTime\" of the file / directory.",
+          "takes_value": false
         },
         {
           "flag": "-a",
-          "help": "Change the \"LastAccessTime\" of the file / directory."
+          "help": "Change the \"LastAccessTime\" of the file / directory.",
+          "takes_value": false
         },
         {
           "flag": "-w",
-          "help": "Change the \"LastWriteTime\" of the file / directory."
+          "help": "Change the \"LastWriteTime\" of the file / directory.",
+          "takes_value": false
         },
         {
           "flag": "-m",
-          "help": "Change the \"ChangeTime\" of the file / directory."
+          "help": "Change the \"ChangeTime\" of the file / directory.",
+          "takes_value": false
         },
         {
           "flag": "-r",
@@ -1446,7 +1627,8 @@
         },
         {
           "flag": "-v",
-          "help": "Query the file after touching to verify the changes."
+          "help": "Query the file after touching to verify the changes.",
+          "takes_value": false
         }
       ]
     },
@@ -1454,7 +1636,8 @@
       "id": "23",
       "name": "findDelegation.py",
       "description": "Queries target domain for delegation relationships ",
-      "path": "impacket/examples/findDelegation.py",
+      "path": "examples/findDelegation.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -1468,11 +1651,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-user",
@@ -1480,7 +1665,8 @@
         },
         {
           "flag": "-disabled",
-          "help": "Query disabled users too"
+          "help": "Query disabled users too",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1488,11 +1674,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1512,7 +1700,8 @@
       "id": "24",
       "name": "getArch.py",
       "description": "Gets the target system's OS architecture version",
-      "path": "impacket/examples/getArch.py",
+      "path": "examples/getArch.py",
+      "implemented": false,
       "required flags": [],
       "optional flags": [
         {
@@ -1521,7 +1710,7 @@
         },
         {
           "flag": "-targets",
-          "help": "input file with targets system to query Arch from (one per line)."
+          "help": "input file with targets system to query Arch from (one per line). "
         },
         {
           "flag": "-timeout",
@@ -1529,19 +1718,22 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         }
       ]
     },
     {
       "id": "25",
       "name": "getPac.py",
-      "description": "This script will get the PAC of the specified target user just having a normal authenticated user credentials. It does so by using a mix of [MS-SFU]'s S4USelf + User to User Kerberos Authentication. Original idea (or accidental discovery :) ) of adding U2U capabilities inside a S4USelf by Benjamin Delpy (@gentilkiwi)",
-      "path": "impacket/examples/getPac.py",
+      "description": "",
+      "path": "examples/getPac.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "credentials",
@@ -1555,11 +1747,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1571,7 +1765,8 @@
       "id": "26",
       "name": "getST.py",
       "description": "Given a password, hash or aesKey, it will request a Service Ticket and save it as ccache",
-      "path": "impacket/examples/getST.py",
+      "path": "examples/getST.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "identity",
@@ -1589,7 +1784,8 @@
         },
         {
           "flag": "-dmsa",
-          "help": "Use DMSA (Delegated Managed Service Accounts)"
+          "help": "Use DMSA (Delegated Managed Service Accounts) ",
+          "takes_value": false
         },
         {
           "flag": "-impersonate",
@@ -1601,27 +1797,33 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-u2u",
-          "help": "Request User-to-User ticket"
+          "help": "Request User-to-User ticket",
+          "takes_value": false
         },
         {
           "flag": "-self",
-          "help": "Only do S4U2self, no S4U2proxy"
+          "help": "Only do S4U2self, no S4U2proxy",
+          "takes_value": false
         },
         {
           "flag": "-force-forwardable",
-          "help": "Force the service ticket obtained through S4U2Self to be forwardable. For best results, the -hashes and -aesKey values for the specified -identity should be provided. This allows impresonation of protected users and bypass of \"Kerberos-only\" constrained delegation restrictions. See CVE-2020-17049"
+          "help": "Force the service ticket obtained through S4U2Self to be forwardable. For best results, the -hashes and -aesKey values for the specified -identity should be provided. This allows impresonation of protected users and bypass of \"Kerberos-only\" constrained delegation restrictions. See CVE-2020-17049",
+          "takes_value": false
         },
         {
           "flag": "-renew",
-          "help": "Sets the RENEW ticket option to renew the TGT used for authentication. Set -spn to 'krbtgt/DOMAINFQDN'"
+          "help": "Sets the RENEW ticket option to renew the TGT used for authentication. Set -spn to 'krbtgt/DOMAINFQDN'",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1629,11 +1831,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1649,7 +1853,8 @@
       "id": "27",
       "name": "getTGT.py",
       "description": "Given a password, hash or aesKey, it will request a TGT and save it as ccache",
-      "path": "impacket/examples/getTGT.py",
+      "path": "examples/getTGT.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "identity",
@@ -1659,11 +1864,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1671,11 +1878,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1691,7 +1900,7 @@
         },
         {
           "flag": "-principalType",
-          "help": "PrincipalType of the token, can be one of NT_UNKNOWN, NT_PRINCIPAL, NT_SRV_INST, NT_SRV_HST, NT_SRV_XHST, NT_UID, NT_SMTP_NAME, NT_ENTERPRISE, NT_WELLKNOWN, NT_SRV_HST_DOMAIN, NT_MS_PRINCIPAL, NT_MS_PRINCIPAL_AND_ID, NT_ENT_PRINCIPAL_AND_ID; default is NT_PRINCIPAL,"
+          "help": "PrincipalType of the token, can be one of  NT_UNKNOWN, NT_PRINCIPAL, NT_SRV_INST, NT_SRV_HST, NT_SRV_XHST, NT_UID, NT_SMTP_NAME, NT_ENTERPRISE, NT_WELLKNOWN, NT_SRV_HST_DOMAIN, NT_MS_PRINCIPAL, NT_MS_PRINCIPAL_AND_ID, NT_ENT_PRINCIPAL_AND_ID; default is NT_PRINCIPAL, "
         }
       ]
     },
@@ -1699,7 +1908,8 @@
       "id": "28",
       "name": "goldenPac.py",
       "description": "MS14-068 Exploit. It establishes a SMBConnection and PSEXEcs the target or saves the TGT for later use.",
-      "path": "impacket/examples/goldenPac.py",
+      "path": "examples/goldenPac.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -1713,11 +1923,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-c",
@@ -1745,7 +1957,8 @@
       "id": "29",
       "name": "karmaSMB.py",
       "description": "For every file request received, this module will return the pathname contents",
-      "path": "impacket/examples/karmaSMB.py",
+      "path": "examples/karmaSMB.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "fileName",
@@ -1755,7 +1968,8 @@
       "optional flags": [
         {
           "flag": "--help",
-          "help": "show this help message and exit"
+          "help": "show this help message and exit",
+          "takes_value": false
         },
         {
           "flag": "-config",
@@ -1763,15 +1977,18 @@
         },
         {
           "flag": "-smb2support",
-          "help": "SMB2 Support (experimental!)"
+          "help": "SMB2 Support (experimental!)",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         }
       ]
     },
@@ -1779,11 +1996,12 @@
       "id": "30",
       "name": "keylistattack.py",
       "description": "Performs the KERB-KEY-LIST-REQ attack to dump secrets from the remote machine without executing any agent there.",
-      "path": "impacket/examples/keylistattack.py",
+      "path": "examples/keylistattack.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
-          "help": "[[domain/]username[:password]@]<KDC HostName or IP address> (Use this credential to authenticate to SMB and list domain users (low-privilege account) or LIST (if you want to parse a target file)"
+          "help": "[[domain/]username[:password]@]<KDC HostName or IP address> (Use this credential to authenticate to SMB and list domain users (low-privilege account) or LIST (if you want to parse a target file) "
         }
       ],
       "optional flags": [
@@ -1797,15 +2015,18 @@
         },
         {
           "flag": "-full",
-          "help": "Run the attack against all domain users. Noisy! It could lead to more TGS requests being rejected"
+          "help": "Run the attack against all domain users. Noisy! It could lead to more TGS requests being rejected",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-domain",
@@ -1817,11 +2038,15 @@
         },
         {
           "flag": "-t",
-          "help": "Attack only the username specified (only works with LIST)"
+          "help": "Attack only the username specified, optionally as username:rid (only works with LIST)"
         },
         {
           "flag": "-tf",
-          "help": "File that contains a list of target usernames (only works with LIST)"
+          "help": "File that contains a list of target usernames, one per line, optionally as username:rid (only works with LIST)"
+        },
+        {
+          "flag": "-domain-sid",
+          "help": "Domain SID, used to build the ticket PAC (only works with LIST; obtained automatically via SAMR otherwise). Recommended against PAC-hardened DCs"
         },
         {
           "flag": "-hashes",
@@ -1829,11 +2054,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos to authenticate to SMB and list domain users. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos to authenticate to SMB and list domain users. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1853,7 +2080,8 @@
       "id": "31",
       "name": "kintercept.py",
       "description": "Intercept TCP streams",
-      "path": "impacket/examples/kintercept.py",
+      "path": "examples/kintercept.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "server",
@@ -1883,37 +2111,42 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         }
       ]
     },
     {
       "id": "32",
       "name": "lookupsid.py",
-      "description": "DCE/RPC lookup sid brute forcer example",
-      "path": "impacket/examples/lookupsid.py",
+      "description": "",
+      "path": "examples/lookupsid.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
           "help": "[[domain/]username[:password]@]<targetName or address>"
+        },
+        {
+          "flag": "maxRid",
+          "help": "max Rid to check (default 4000)"
         }
       ],
       "optional flags": [
         {
-          "flag": "maxRid",
-          "help": "max Rid to check (default 4000)"
-        },
-        {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-target-ip",
@@ -1925,7 +2158,8 @@
         },
         {
           "flag": "-domain-sids",
-          "help": "Enumerate Domain SIDs (will likely forward requests to the DC)"
+          "help": "Enumerate Domain SIDs (will likely forward requests to the DC)",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -1933,11 +2167,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful when proxying through smbrelayx)"
+          "help": "don't ask for password (useful when proxying through smbrelayx)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         }
       ]
     },
@@ -1945,7 +2181,8 @@
       "id": "33",
       "name": "machine_role.py",
       "description": "Retrieve a host's role along with its primary domain details.",
-      "path": "impacket/examples/machine_role.py",
+      "path": "examples/machine_role.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -1955,11 +2192,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-dc-ip",
@@ -1979,11 +2218,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -1995,7 +2236,8 @@
       "id": "34",
       "name": "mimikatz.py",
       "description": "SMB client implementation.",
-      "path": "impacket/examples/mimikatz.py",
+      "path": "examples/mimikatz.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -2009,11 +2251,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -2021,11 +2265,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2045,7 +2291,8 @@
       "id": "35",
       "name": "mqtt_check.py",
       "description": "MQTT login check",
-      "path": "impacket/examples/mqtt_check.py",
+      "path": "examples/mqtt_check.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -2055,7 +2302,8 @@
       "optional flags": [
         {
           "flag": "--help",
-          "help": "show this help message and exit"
+          "help": "show this help message and exit",
+          "takes_value": false
         },
         {
           "flag": "-client-id",
@@ -2063,7 +2311,8 @@
         },
         {
           "flag": "-ssl",
-          "help": "turn SSL on"
+          "help": "turn SSL on",
+          "takes_value": false
         },
         {
           "flag": "-port",
@@ -2071,11 +2320,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         }
       ]
     },
@@ -2083,7 +2334,8 @@
       "id": "36",
       "name": "mssqlclient.py",
       "description": "TDS client implementation (SSL supported).",
-      "path": "impacket/examples/mssqlclient.py",
+      "path": "examples/mssqlclient.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -2097,19 +2349,27 @@
         },
         {
           "flag": "-windows-auth",
-          "help": "whether or not to use Windows Authentication (default False)"
+          "help": "whether or not to use Windows Authentication (default False)",
+          "takes_value": false
+        },
+        {
+          "flag": "-named-pipe",
+          "help": "Connect to the specified SMB named pipe"
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-show",
-          "help": "show the queries"
+          "help": "show the queries",
+          "takes_value": false
         },
         {
           "flag": "-command",
@@ -2136,12 +2396,22 @@
           "help": "NTLM hashes, format is LMHASH:NTHASH"
         },
         {
+          "flag": "-auth-smb",
+          "help": "SMB NTLM credentials for named pipe transport when different from SQL credentials. With -windows-auth or -k over a named pipe, this Windows identity becomes the effective SQL login"
+        },
+        {
+          "flag": "-hashes-smb",
+          "help": "SMB NTLM hashes for named pipe transport, format is LMHASH:NTHASH"
+        },
+        {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2165,7 +2435,8 @@
       "id": "37",
       "name": "mssqlinstance.py",
       "description": "Asks the remote host for its running MSSQL Instances.",
-      "path": "impacket/examples/mssqlinstance.py",
+      "path": "examples/mssqlinstance.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "host",
@@ -2179,11 +2450,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         }
       ]
     },
@@ -2191,7 +2464,8 @@
       "id": "38",
       "name": "net.py",
       "description": "SAMR rpc client implementation.",
-      "path": "impacket/examples/net.py",
+      "path": "examples/net.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -2201,11 +2475,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-name",
@@ -2245,11 +2521,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2272,8 +2550,9 @@
     {
       "id": "39",
       "name": "netview.py",
-      "description": "The idea of this script is to get a list of the sessions opened at the remote hosts and keep track of them. Coincidentally @mubix did something similar a few years ago so credit goes to him (and the script's name ;)). Check it out at https://github.com/mubix/netview The main difference with our approach is we keep looping over the hosts found and keep track of who logged in/out from remote servers. Plus, we keep the connections with the target systems and just send a few DCE-RPC packets. One VERY IMPORTANT thing is: YOU HAVE TO BE ABLE TO RESOLV THE DOMAIN MACHINES NETBIOS NAMES. That's usually solved by setting your DNS to the domain DNS (and the right search domain). Some examples of usage are: netview.py -target 192.168.1.10 beto This will show the sessions on 192.168.1.10 and will authenticate as 'beto' (password will be prompted) netview.py FREEFLY.NET/beto This will download all machines from FREEFLY.NET, authenticated as 'beto' and will gather the session information for those machines that appear to be up. There is a background thread checking aliveness of the targets at all times. netview.py -users /tmp/users -dc-ip freefly-dc.freefly.net -k FREEFLY.NET/beto This will download all machines from FREEFLY.NET, authenticating using Kerberos (that's why -dc-ip parameter is needed), and filter the output based on the list of users specified in /tmp/users file.",
-      "path": "impacket/examples/netview.py",
+      "description": "",
+      "path": "examples/netview.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "identity",
@@ -2299,7 +2578,8 @@
         },
         {
           "flag": "-noloop",
-          "help": "Stop after the first probe"
+          "help": "Stop after the first probe",
+          "takes_value": false
         },
         {
           "flag": "-delay",
@@ -2311,11 +2591,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -2323,11 +2605,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2343,7 +2627,8 @@
       "id": "40",
       "name": "ntfs-read.py",
       "description": "NTFS explorer (read-only)",
-      "path": "impacket/examples/ntfs-read.py",
+      "path": "examples/ntfs-read.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "volume",
@@ -2357,11 +2642,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         }
       ]
     },
@@ -2369,20 +2656,24 @@
       "id": "41",
       "name": "ntlmrelayx.py",
       "description": "For every connection received, this module will try to relay that connection to specified target(s) system or the original client",
-      "path": "impacket/examples/ntlmrelayx.py",
+      "path": "examples/ntlmrelayx.py",
+      "implemented": false,
       "required flags": [],
       "optional flags": [
         {
           "flag": "-h",
-          "help": "show this help message and exit"
+          "help": "show this help message and exit",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-t",
@@ -2394,11 +2685,13 @@
         },
         {
           "flag": "-w",
-          "help": "Watch the target file for changes and update target list automatically (only valid with -tf)"
+          "help": "Watch the target file for changes and update target list automatically (only valid with -tf)",
+          "takes_value": false
         },
         {
           "flag": "-i",
-          "help": "Launch an smbclient, LDAP console or SQL shell insteadof executing a command after a successful relay. This console will listen locally on a tcp port and can be reached with for example netcat."
+          "help": "Launch an smbclient, LDAP console or SQL shell insteadof executing a command after a successful relay. This console will listen locally on a  tcp port and can be reached with for example netcat.",
+          "takes_value": false
         },
         {
           "flag": "-ip",
@@ -2406,35 +2699,43 @@
         },
         {
           "flag": "--no-smb-server",
-          "help": "Disables the SMB server"
+          "help": "Disables the SMB server",
+          "takes_value": false
         },
         {
           "flag": "--no-http-server",
-          "help": "Disables the HTTP server"
+          "help": "Disables the HTTP server",
+          "takes_value": false
         },
         {
           "flag": "--no-wcf-server",
-          "help": "Disables the WCF server"
+          "help": "Disables the WCF server",
+          "takes_value": false
         },
         {
           "flag": "--no-raw-server",
-          "help": "Disables the RAW server"
+          "help": "Disables the RAW server",
+          "takes_value": false
         },
         {
           "flag": "--no-rpc-server",
-          "help": "Disables the RPC server"
+          "help": "Disables the RPC server",
+          "takes_value": false
         },
         {
           "flag": "--no-winrm-server",
-          "help": "Disables the WinRM server"
+          "help": "Disables the WinRM server",
+          "takes_value": false
         },
         {
           "flag": "--no-mssql-server",
-          "help": "Disables the MSSQL server"
+          "help": "Disables the MSSQL server",
+          "takes_value": false
         },
         {
           "flag": "--no-rdp-server",
-          "help": "Disables the RDP server"
+          "help": "Disables the RDP server",
+          "takes_value": false
         },
         {
           "flag": "--smb-port",
@@ -2466,15 +2767,18 @@
         },
         {
           "flag": "--no-multirelay",
-          "help": "If set, disable multi-host relay (SMB and HTTP servers)"
+          "help": "If set, disable multi-host relay (SMB and HTTP servers)",
+          "takes_value": false
         },
         {
           "flag": "--keep-relaying",
-          "help": "If set, keeps relaying to a target even after a successful connection on it"
+          "help": "If set, keeps relaying to a target even after a successful connection on it",
+          "takes_value": false
         },
         {
           "flag": "-ra",
-          "help": "Randomize target selection"
+          "help": "Randomize target selection",
+          "takes_value": false
         },
         {
           "flag": "-r",
@@ -2490,14 +2794,16 @@
         },
         {
           "flag": "-dh",
-          "help": "show encrypted hashes in the console"
+          "help": "show encrypted hashes in the console",
+          "takes_value": false
         },
         {
           "flag": "-codec"
         },
         {
           "flag": "-smb2support",
-          "help": "SMB2 Support"
+          "help": "SMB2 Support",
+          "takes_value": false
         },
         {
           "flag": "-ntlmchallenge",
@@ -2505,7 +2811,8 @@
         },
         {
           "flag": "-socks",
-          "help": "Launch a SOCKS proxy for the connection relayed"
+          "help": "Launch a SOCKS proxy for the connection relayed",
+          "takes_value": false
         },
         {
           "flag": "-socks-address",
@@ -2529,15 +2836,18 @@
         },
         {
           "flag": "-6",
-          "help": "Listen on IPv6"
+          "help": "Listen on IPv6",
+          "takes_value": false
         },
         {
           "flag": "--remove-mic",
-          "help": "Remove MIC (exploit CVE-2019-1040)"
+          "help": "Remove MIC (exploit CVE-2019-1040)",
+          "takes_value": false
         },
         {
           "flag": "--remove-sign-seal",
-          "help": "Remove SIGN/SEAL-related NTLM negotiate flags (exploit CVE-2025-33073)"
+          "help": "Remove SIGN/SEAL-related NTLM negotiate flags (exploit CVE-2025-33073)",
+          "takes_value": false
         },
         {
           "flag": "--serve-image",
@@ -2557,7 +2867,8 @@
         },
         {
           "flag": "--enum-local-admins",
-          "help": "If relayed user is not admin, attempt SAMR lookup to see who is (only works pre Win 10 Anniversary)"
+          "help": "If relayed user is not admin, attempt SAMR lookup to see who is (only works pre Win 10 Anniversary)",
+          "takes_value": false
         },
         {
           "flag": "--rpc-attack",
@@ -2569,7 +2880,8 @@
         },
         {
           "flag": "-rpc-use-smb",
-          "help": "Relay DCE/RPC to SMB pipes"
+          "help": "Relay DCE/RPC to SMB pipes",
+          "takes_value": false
         },
         {
           "flag": "-auth-smb",
@@ -2604,23 +2916,41 @@
         },
         {
           "flag": "-remove-target",
-          "help": "Try to remove the target in the challenge message (in case CVE-2019-1019 patch is not installed)"
+          "help": "Try to remove the target in the challenge message (in case CVE-2019-1019 patch is not installed)",
+          "takes_value": false
+        },
+        {
+          "flag": "--https",
+          "help": "Enable TLS (HTTPS) on the HTTP relay server",
+          "takes_value": false
+        },
+        {
+          "flag": "--certfile",
+          "help": "Path to server certificate (PEM format) for HTTPS"
+        },
+        {
+          "flag": "--keyfile",
+          "help": "Path to private key (PEM format) for HTTPS, if not included in the certificate file"
         },
         {
           "flag": "--no-dump",
-          "help": "Do not attempt to dump LDAP information"
+          "help": "Do not attempt to dump LDAP information",
+          "takes_value": false
         },
         {
           "flag": "--no-da",
-          "help": "Do not attempt to add a Domain Admin"
+          "help": "Do not attempt to add a Domain Admin",
+          "takes_value": false
         },
         {
           "flag": "--no-acl",
-          "help": "Disable ACL attacks"
+          "help": "Disable ACL attacks",
+          "takes_value": false
         },
         {
           "flag": "--no-validate-privs",
-          "help": "Do not attempt to enumerate privileges, assume permissions are granted to escalate a user via ACL attacks"
+          "help": "Do not attempt to enumerate privileges, assume permissions are granted to escalate a user via ACL attacks",
+          "takes_value": false
         },
         {
           "flag": "--escalate-user",
@@ -2628,27 +2958,38 @@
         },
         {
           "flag": "--delegate-access",
-          "help": "Delegate access on relayed computer account to the specified account"
+          "help": "Delegate access on relayed computer account to the specified account",
+          "takes_value": false
         },
         {
           "flag": "--sid",
-          "help": "Use a SID to delegate access rather than an account name"
+          "help": "Use a SID to delegate access rather than an account name",
+          "takes_value": false
         },
         {
           "flag": "--dump-laps",
-          "help": "Attempt to dump any LAPS passwords readable by the user"
+          "help": "Attempt to dump any LAPS passwords readable by the user",
+          "takes_value": false
         },
         {
           "flag": "--dump-gmsa",
-          "help": "Attempt to dump any gMSA passwords readable by the user"
+          "help": "Attempt to dump any gMSA passwords readable by the user",
+          "takes_value": false
         },
         {
           "flag": "--dump-adcs",
-          "help": "Attempt to dump ADCS enrollment services and certificate templates info"
+          "help": "Attempt to dump ADCS enrollment services and certificate templates info",
+          "takes_value": false
         },
         {
           "flag": "--dump-info-attr",
-          "help": "Attempt to dump the info attribute of all user and group domain objects (may contain credentials)"
+          "help": "Attempt to dump the info attribute of all user and group domain objects (may contain credentials)",
+          "takes_value": false
+        },
+        {
+          "flag": "--dump-pre2k",
+          "help": "Enumerate computer accounts vulnerable to pre-Windows 2000 authentication (predictable password)",
+          "takes_value": false
         },
         {
           "flag": "--add-dns-record",
@@ -2668,7 +3009,8 @@
         },
         {
           "flag": "-a",
-          "help": "Instead of searching for keywords, dump all emails"
+          "help": "Instead of searching for keywords, dump all emails",
+          "takes_value": false
         },
         {
           "flag": "-im",
@@ -2676,7 +3018,8 @@
         },
         {
           "flag": "--adcs",
-          "help": "Enable AD CS relay attack"
+          "help": "Enable AD CS relay attack",
+          "takes_value": false
         },
         {
           "flag": "--template",
@@ -2692,11 +3035,13 @@
         },
         {
           "flag": "--enum-templates",
-          "help": "Enumerate enabled AD CS templates that the relayed account has access to"
+          "help": "Enumerate enabled AD CS templates that the relayed account has access to",
+          "takes_value": false
         },
         {
           "flag": "--shadow-credentials",
-          "help": "Enable Shadow Credentials relay attack (msDS-KeyCredentialLink manipulation for PKINIT pre-authentication)"
+          "help": "Enable Shadow Credentials relay attack (msDS-KeyCredentialLink manipulation for PKINIT pre-authentication)",
+          "takes_value": false
         },
         {
           "flag": "--shadow-target",
@@ -2715,8 +3060,18 @@
           "help": "filename to store the generated self-signed PEM or PFX certificate and key"
         },
         {
+          "flag": "--shadow-replace",
+          "help": "Overwrite existing KeyCredentials with the new one instead of appending. Existing KeyCredentials are backed up to JSON first (see --backup-path)",
+          "takes_value": false
+        },
+        {
+          "flag": "--backup-path",
+          "help": "Path to backup JSON file used with --shadow-replace. If .json is omitted it is appended automatically"
+        },
+        {
           "flag": "--sccm-policies",
-          "help": "Enable SCCM policies attack. Performs SCCM secret policies dump from a Management Point by registering a device. Works best when relaying a machine account. Expects as target 'http://<MP>/ccm_system_windowsauth/request'"
+          "help": "Enable SCCM policies attack. Performs SCCM secret policies dump from a Management Point by registering a device. Works best when relaying a machine account. Expects as target 'http://<MP>/ccm_system_windowsauth/request'",
+          "takes_value": false
         },
         {
           "flag": "--sccm-policies-clientname",
@@ -2728,7 +3083,8 @@
         },
         {
           "flag": "--sccm-dp",
-          "help": "Enable SCCM Distribution Point attack. Perform package file dump from an SCCM Distribution Point. Expects as target 'http://<DP>/sms_dp_smspkg$/Datalib'"
+          "help": "Enable SCCM Distribution Point attack. Perform package file dump from an SCCM Distribution Point. Expects as target 'http://<DP>/sms_dp_smspkg$/Datalib'",
+          "takes_value": false
         },
         {
           "flag": "--sccm-dp-extensions",
@@ -2744,7 +3100,8 @@
       "id": "42",
       "name": "owneredit.py",
       "description": "Python editor for a principal's DACL.",
-      "path": "impacket/examples/owneredit.py",
+      "path": "examples/owneredit.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "identity",
@@ -2754,15 +3111,18 @@
       "optional flags": [
         {
           "flag": "-use-ldaps",
-          "help": "Use LDAPS instead of LDAP"
+          "help": "Use LDAPS instead of LDAP",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -2770,11 +3130,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2819,52 +3181,11 @@
       ]
     },
     {
-      "id": "43",
-      "name": "ping.py",
-      "description": "Simple ICMP ping. This implementation of ping uses the ICMP echo and echo-reply packets to check the status of a host. If the remote host is up, it should reply to the echo probe with an echo-reply packet. Note that this isn't a definite test, as in the case the remote host is up but refuses to reply the probes. Also note that the user must have special access to be able to open a raw socket, which this program requires.",
-      "path": "impacket/examples/ping.py",
-      "required flags": [
-        {
-          "flag": "<src"
-        },
-        {
-          "flag": "ip>"
-        },
-        {
-          "flag": "<dst"
-        },
-        {
-          "flag": "ip>"
-        }
-      ],
-      "optional flags": []
-    },
-    {
-      "id": "44",
-      "name": "ping6.py",
-      "description": "Simple ICMP6 ping. This implementation of ping uses the ICMP echo and echo-reply packets to check the status of a host. If the remote host is up, it should reply to the echo probe with an echo-reply packet. Note that this isn't a definite test, as in the case the remote host is up but refuses to reply the probes. Also note that the user must have special access to be able to open a raw socket, which this program requires.",
-      "path": "impacket/examples/ping6.py",
-      "required flags": [
-        {
-          "flag": "<src"
-        },
-        {
-          "flag": "ip>"
-        },
-        {
-          "flag": "<dst"
-        },
-        {
-          "flag": "ip>"
-        }
-      ],
-      "optional flags": []
-    },
-    {
       "id": "45",
       "name": "psexec.py",
       "description": "PSEXEC like functionality example using RemComSvc.",
-      "path": "impacket/examples/psexec.py",
+      "path": "examples/psexec.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -2890,11 +3211,13 @@
         },
         {
           "flag": "-ts",
-          "help": "adds timestamp to every logging output"
+          "help": "adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-codec"
@@ -2905,11 +3228,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2945,7 +3270,8 @@
       "id": "46",
       "name": "raiseChild.py",
       "description": "Privilege Escalation from a child domain up to its forest",
-      "path": "impacket/examples/raiseChild.py",
+      "path": "examples/raiseChild.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -2955,11 +3281,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-w",
@@ -2979,11 +3307,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -2995,7 +3325,8 @@
       "id": "47",
       "name": "rbcd.py",
       "description": "Python (re)setter for property msDS-AllowedToActOnBehalfOfOtherIdentity for Kerberos RBCD attacks.",
-      "path": "impacket/examples/rbcd.py",
+      "path": "examples/rbcd.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "identity",
@@ -3017,15 +3348,18 @@
         },
         {
           "flag": "-use-ldaps",
-          "help": "Use LDAPS instead of LDAP"
+          "help": "Use LDAPS instead of LDAP",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3033,11 +3367,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3057,7 +3393,8 @@
       "id": "48",
       "name": "rdp_check.py",
       "description": "Test whether an account is valid on the target host using the RDP protocol.",
-      "path": "impacket/examples/rdp_check.py",
+      "path": "examples/rdp_check.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3067,15 +3404,18 @@
       "optional flags": [
         {
           "flag": "-6",
-          "help": "Test on IPv6"
+          "help": "Test on IPv6",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3087,7 +3427,8 @@
       "id": "49",
       "name": "reg.py",
       "description": "Windows Register manipulation script.",
-      "path": "impacket/examples/reg.py",
+      "path": "examples/reg.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3105,23 +3446,27 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-v",
-          "help": "Specifies the registry value name that is to be queried. If omitted, all value names for keyName are returned."
+          "help": "Specifies the registry value name that is to be queried. If omitted, all value names for keyName are returned. "
         },
         {
           "flag": "-ve",
-          "help": "Queries for the default value or empty value name"
+          "help": "Queries for the default value or empty value name",
+          "takes_value": false
         },
         {
           "flag": "-s",
-          "help": "Specifies to query all subkeys and value names recursively."
+          "help": "Specifies to query all subkeys and value names recursively.",
+          "takes_value": false
         },
         {
           "flag": "-vt",
@@ -3133,11 +3478,13 @@
         },
         {
           "flag": "--persistent",
-          "help": "Specify that the created key is intended to be persistent through reboot. Default is volatile key creation"
+          "help": "Specify that the created key is intended to be persistent through reboot. Default is volatile key creation",
+          "takes_value": false
         },
         {
           "flag": "-va",
-          "help": "Delete all values under this key."
+          "help": "Delete all values under this key.",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3145,11 +3492,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3173,7 +3522,8 @@
       "id": "50",
       "name": "registry-read.py",
       "description": "Reads data from registry hives.",
-      "path": "impacket/examples/registry-read.py",
+      "path": "examples/registry-read.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "hive",
@@ -3187,15 +3537,18 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-recursive",
-          "help": "recursive search (default False)"
+          "help": "recursive search (default False)",
+          "takes_value": false
         }
       ]
     },
@@ -3203,7 +3556,8 @@
       "id": "51",
       "name": "regsecrets.py",
       "description": "Performs various techniques to dump secrets from the remote machine without executing any agent there.",
-      "path": "impacket/examples/regsecrets.py",
+      "path": "examples/regsecrets.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3213,11 +3567,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-system",
@@ -3229,15 +3585,18 @@
         },
         {
           "flag": "-nosam",
-          "help": "Do not retrieve SAM information"
+          "help": "Do not retrieve SAM information",
+          "takes_value": false
         },
         {
           "flag": "-nocache",
-          "help": "Do not retrieve MSCache information"
+          "help": "Do not retrieve MSCache information",
+          "takes_value": false
         },
         {
           "flag": "-nolsa",
-          "help": "Do not retrieve LSASecrets"
+          "help": "Do not retrieve LSASecrets",
+          "takes_value": false
         },
         {
           "flag": "-throttle",
@@ -3249,7 +3608,8 @@
         },
         {
           "flag": "-history",
-          "help": "Dump password history (NTDS and SAM hashes), and LSA secrets OldVal"
+          "help": "Dump password history (NTDS and SAM hashes), and LSA secrets OldVal",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3257,11 +3617,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3285,7 +3647,8 @@
       "id": "52",
       "name": "rpcdump.py",
       "description": "Dumps the remote RPC enpoints information via epmapper.",
-      "path": "impacket/examples/rpcdump.py",
+      "path": "examples/rpcdump.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3295,11 +3658,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-target-ip",
@@ -3319,25 +3684,29 @@
       "id": "53",
       "name": "rpcmap.py",
       "description": "Lookups listening MSRPC interfaces.",
-      "path": "impacket/examples/rpcmap.py",
+      "path": "examples/rpcmap.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "stringbinding",
-          "help": "R|String binding to connect to MSRPC interface, for example: ncacn_ip_tcp:192.168.0.1[135] ncacn_np:192.168.0.1[\\pipe\\spoolss] ncacn_http:192.168.0.1[593] ncacn_http:[6001,RpcProxy=exchange.contoso.com:443] ncacn_http:localhost[3388,RpcProxy=rds.contoso:443]"
+          "help": "R|String binding to connect to MSRPC interface, for example:\nncacn_ip_tcp:192.168.0.1[135]\nncacn_np:192.168.0.1[\\pipe\\spoolss]\nncacn_http:192.168.0.1[593]\nncacn_http:[6001,RpcProxy=exchange.contoso.com:443]\nncacn_http:localhost[3388,RpcProxy=rds.contoso:443]"
         }
       ],
       "optional flags": [
         {
           "flag": "-brute-uuids",
-          "help": "Bruteforce UUIDs even if MGMT interface is available"
+          "help": "Bruteforce UUIDs even if MGMT interface is available",
+          "takes_value": false
         },
         {
           "flag": "-brute-opnums",
-          "help": "Bruteforce opnums for found UUIDs"
+          "help": "Bruteforce opnums for found UUIDs",
+          "takes_value": false
         },
         {
           "flag": "-brute-versions",
-          "help": "Bruteforce major versions of found UUIDs"
+          "help": "Bruteforce major versions of found UUIDs",
+          "takes_value": false
         },
         {
           "flag": "-opnum-max",
@@ -3357,11 +3726,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-target-ip",
@@ -3389,7 +3760,8 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for passwords"
+          "help": "don't ask for passwords",
+          "takes_value": false
         }
       ]
     },
@@ -3397,7 +3769,8 @@
       "id": "54",
       "name": "sambaPipe.py",
       "description": "Samba Pipe exploit",
-      "path": "impacket/examples/sambaPipe.py",
+      "path": "examples/sambaPipe.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3411,11 +3784,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3423,11 +3798,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3451,7 +3828,8 @@
       "id": "55",
       "name": "samedit.py",
       "description": "In-place edits a local user's password in a SAM hive file",
-      "path": "impacket/examples/samedit.py",
+      "path": "examples/samedit.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "user",
@@ -3481,11 +3859,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         }
       ]
     },
@@ -3493,7 +3873,8 @@
       "id": "56",
       "name": "samrdump.py",
       "description": "This script downloads the list of users for the target system.",
-      "path": "impacket/examples/samrdump.py",
+      "path": "examples/samrdump.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3503,15 +3884,18 @@
       "optional flags": [
         {
           "flag": "-csv",
-          "help": "Turn CSV output"
+          "help": "Turn CSV output",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-dc-ip",
@@ -3531,11 +3915,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3547,7 +3933,8 @@
       "id": "57",
       "name": "secretsdump.py",
       "description": "Performs various techniques to dump secrets from the remote machine without executing any agent there.",
-      "path": "impacket/examples/secretsdump.py",
+      "path": "examples/secretsdump.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3557,11 +3944,13 @@
       "optional flags": [
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-system",
@@ -3589,11 +3978,13 @@
         },
         {
           "flag": "-skip-sam",
-          "help": "Do NOT parse the SAM hive on remote system"
+          "help": "Do NOT parse the SAM hive on remote system",
+          "takes_value": false
         },
         {
           "flag": "-skip-security",
-          "help": "Do NOT parse the SECURITY hive on remote system"
+          "help": "Do NOT parse the SECURITY hive on remote system",
+          "takes_value": false
         },
         {
           "flag": "-outputfile",
@@ -3601,7 +3992,8 @@
         },
         {
           "flag": "-use-vss",
-          "help": "Use the NTDSUTIL VSS method instead of default DRSUAPI"
+          "help": "Use the NTDSUTIL VSS method instead of default DRSUAPI",
+          "takes_value": false
         },
         {
           "flag": "-rodcNo",
@@ -3613,7 +4005,8 @@
         },
         {
           "flag": "-use-keylist",
-          "help": "Use the Kerb-Key-List method instead of default DRSUAPI"
+          "help": "Use the Kerb-Key-List method instead of default DRSUAPI",
+          "takes_value": false
         },
         {
           "flag": "-exec-method",
@@ -3621,11 +4014,13 @@
         },
         {
           "flag": "-use-remoteSSWMI",
-          "help": "Remotely create Shadow Snapshot via WMI and download SAM, SYSTEM and SECURITY from it, the parse locally"
+          "help": "Remotely create Shadow Snapshot via WMI and download SAM, SYSTEM and SECURITY from it, the parse locally",
+          "takes_value": false
         },
         {
           "flag": "-use-remoteSSWMI-NTDS",
-          "help": "Dump NTDS.DIT also when using the Remote Shadow Snapshot Method via WMI. Use it with dumping from a DC. IMPORTANT: this flag only works when also using -use-remoteSSWMI"
+          "help": "Dump NTDS.DIT also when using the Remote Shadow Snapshot Method via WMI. Use it with dumping from a DC. IMPORTANT: this flag only works when also using -use-remoteSSWMI",
+          "takes_value": false
         },
         {
           "flag": "-remoteSSWMI-remote-volume",
@@ -3645,19 +4040,23 @@
         },
         {
           "flag": "-just-dc",
-          "help": "Extract only NTDS.DIT data (NTLM hashes and Kerberos keys)"
+          "help": "Extract only NTDS.DIT data (NTLM hashes and Kerberos keys)",
+          "takes_value": false
         },
         {
           "flag": "-just-dc-ntlm",
-          "help": "Extract only NTDS.DIT data (NTLM hashes only)"
+          "help": "Extract only NTDS.DIT data (NTLM hashes only)",
+          "takes_value": false
         },
         {
           "flag": "-trust-keys",
-          "help": "Dump trusted domain object (TDO) secrets and derive the inter-realm Kerberos keys (AES + RC4) for each trust direction"
+          "help": "Dump trusted domain object (TDO) secrets and derive the inter-realm Kerberos keys (AES + RC4) for each trust direction",
+          "takes_value": false
         },
         {
           "flag": "-just-trust-keys",
-          "help": "Like -trust-keys but dump ONLY the trust keys, skipping every account secret"
+          "help": "Like -trust-keys but dump ONLY the trust keys, skipping every account secret",
+          "takes_value": false
         },
         {
           "flag": "-skip-user",
@@ -3665,15 +4064,18 @@
         },
         {
           "flag": "-pwd-last-set",
-          "help": "Shows pwdLastSet attribute for each NTDS.DIT account. Doesn't apply to -outputfile data"
+          "help": "Shows pwdLastSet attribute for each NTDS.DIT account. Doesn't apply to -outputfile data",
+          "takes_value": false
         },
         {
           "flag": "-user-status",
-          "help": "Display whether or not the user is disabled"
+          "help": "Display whether or not the user is disabled",
+          "takes_value": false
         },
         {
           "flag": "-history",
-          "help": "Dump password history (NTDS and SAM hashes), and LSA secrets OldVal"
+          "help": "Dump password history (NTDS and SAM hashes), and LSA secrets OldVal",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3681,11 +4083,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3709,7 +4113,8 @@
       "id": "58",
       "name": "services.py",
       "description": "Windows Service manipulation script.",
-      "path": "impacket/examples/services.py",
+      "path": "examples/services.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3731,11 +4136,21 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
+        },
+        {
+          "flag": "-display",
+          "help": "display name"
+        },
+        {
+          "flag": "-path",
+          "help": "binary path"
         },
         {
           "flag": "-service_type",
@@ -3759,11 +4174,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3787,7 +4204,8 @@
       "id": "59",
       "name": "smbclient.py",
       "description": "SMB client implementation.",
-      "path": "impacket/examples/smbclient.py",
+      "path": "examples/smbclient.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3805,11 +4223,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-hashes",
@@ -3817,11 +4237,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3829,7 +4251,8 @@
         },
         {
           "flag": "-dfs-follow",
-          "help": "Automatically follow DFS links by creating new SMB connections to target servers. Disabled by default for OPSEC reasons (use dfs_mode command in shell to toggle at runtime)"
+          "help": "Automatically follow DFS links by creating new SMB connections to target servers. Disabled by default for OPSEC reasons (use dfs_mode command in shell to toggle at runtime)",
+          "takes_value": false
         },
         {
           "flag": "-dc-ip",
@@ -3848,8 +4271,9 @@
     {
       "id": "60",
       "name": "smbexec.py",
-      "description": "A similar approach to psexec w/o using RemComSvc. The technique is described here https://web.archive.org/web/20190515131124/https://www.optiv.com/blog/owning-computers-without-shell-access Our implementation goes one step further, instantiating a local smbserver to receive the output of the commands. This is useful in the situation where the target machine does NOT have a writeable share available. Keep in mind that, although this technique might help avoiding AVs, there are a lot of event logs generated and you can't expect executing tasks that will last long since Windows will kill the process since it's not responding as a Windows service. Certainly not a stealthy way. This script works in two ways: 1) share mode: you specify a share, and everything is done through that share. 2) server mode: if for any reason there's no share available, this script will launch a local SMB server, so the output of the commands executed are sent back by the target machine into a locally shared folder. Keep in mind you would need root access to bind to port 445 in the local machine.",
-      "path": "impacket/examples/smbexec.py",
+      "description": "",
+      "path": "examples/smbexec.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -3867,11 +4291,13 @@
         },
         {
           "flag": "-ts",
-          "help": "adds timestamp to every logging output"
+          "help": "adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-codec"
@@ -3902,11 +4328,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -3922,7 +4350,8 @@
       "id": "61",
       "name": "smbserver.py",
       "description": "This script will launch a SMB Server and add a share specified as an argument. Usually, you need to be root in order to bind to port 445. For optional authentication, it is possible to specify username and password or the NTLM hash. Example: smbserver.py -comment 'My share' TMP /tmp",
-      "path": "impacket/examples/smbserver.py",
+      "path": "examples/smbserver.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "shareName",
@@ -3976,11 +4405,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ip",
@@ -3988,15 +4419,18 @@
         },
         {
           "flag": "-readonly",
-          "help": "Only allow reading of files"
+          "help": "Only allow reading of files",
+          "takes_value": false
         },
         {
           "flag": "-disablekerberos",
-          "help": "Do not offer Kerberos authentication"
+          "help": "Do not offer Kerberos authentication",
+          "takes_value": false
         },
         {
           "flag": "-disablentlm",
-          "help": "Do not offer NTLM authentication"
+          "help": "Do not offer NTLM authentication",
+          "takes_value": false
         },
         {
           "flag": "-port",
@@ -4004,15 +4438,18 @@
         },
         {
           "flag": "-dropssp",
-          "help": "Disable NTLM ESS/SSP during negotiation"
+          "help": "Disable NTLM ESS/SSP during negotiation",
+          "takes_value": false
         },
         {
           "flag": "-6",
-          "help": "Listen on IPv6"
+          "help": "Listen on IPv6",
+          "takes_value": false
         },
         {
           "flag": "-smb2support",
-          "help": "SMB2 Support (experimental!)"
+          "help": "SMB2 Support (experimental!)",
+          "takes_value": false
         },
         {
           "flag": "-outputfile",
@@ -4021,48 +4458,11 @@
       ]
     },
     {
-      "id": "62",
-      "name": "sniff.py",
-      "description": "Simple packet sniffer. This packet sniffer uses the pcap library to listen for packets in transit over the specified interface. The returned packages can be filtered according to a BPF filter (see tcpdump(3) for further information on BPF filters). Note that the user might need special permissions to be able to use pcap.",
-      "path": "impacket/examples/sniff.py",
-      "required flags": [],
-      "optional flags": [
-        {
-          "flag": "filter",
-          "help": "BPF-style capture filter expression, e.g. 'tcp port 445' (optional, captures everything if omitted)"
-        }
-      ]
-    },
-    {
-      "id": "63",
-      "name": "sniffer.py",
-      "description": "Simple packet sniffer. This packet sniffer uses a raw socket to listen for packets in transit corresponding to the specified protocols. Note that the user might need special permissions to be able to use raw sockets.",
-      "path": "impacket/examples/sniffer.py",
-      "required flags": [],
-      "optional flags": [
-        {
-          "flag": "proto1 [proto2] ...",
-          "help": "List of protocol names to listen for (space separated). Defaults to a built-in protocol set if omitted."
-        }
-      ]
-    },
-    {
-      "id": "64",
-      "name": "split.py",
-      "description": "Pcap dump splitter This tools splits pcap capture files into smaller ones, one for each different TCP/IP connection found in the original.",
-      "path": "impacket/examples/split.py",
-      "required flags": [
-        {
-          "flag": "<filename>"
-        }
-      ],
-      "optional flags": []
-    },
-    {
       "id": "65",
       "name": "ticketConverter.py",
-      "description": "This script will convert kirbi files (commonly used by mimikatz) into ccache files used by impacket, and vice versa. Examples: ./ticket_converter.py admin.ccache admin.kirbi ./ticket_converter.py admin.kirbi admin.ccache",
-      "path": "impacket/examples/ticketConverter.py",
+      "description": "",
+      "path": "examples/ticketConverter.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "input_file",
@@ -4076,7 +4476,8 @@
       "optional flags": [
         {
           "flag": "-b",
-          "help": "Decode input ticket from base64 with unwrap support"
+          "help": "Decode input ticket from base64 with unwrap support",
+          "takes_value": false
         }
       ]
     },
@@ -4084,7 +4485,8 @@
       "id": "66",
       "name": "ticketer.py",
       "description": "Creates a Kerberos golden/silver tickets based on user options",
-      "path": "impacket/examples/ticketer.py",
+      "path": "examples/ticketer.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -4106,7 +4508,8 @@
         },
         {
           "flag": "-request",
-          "help": "Requests ticket to domain and clones it changing only the supplied information. It requires specifying -user"
+          "help": "Requests ticket to domain and clones it changing only the supplied information. It requires specifying -user",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -4134,11 +4537,13 @@
         },
         {
           "flag": "-extra-pac",
-          "help": "Populate your ticket with extra PAC (UPN_DNS)"
+          "help": "Populate your ticket with extra PAC (UPN_DNS)",
+          "takes_value": false
         },
         {
           "flag": "-old-pac",
-          "help": "Use the old PAC structure to create your ticket (exclude PAC_ATTRIBUTES_INFO and PAC_REQUESTOR"
+          "help": "Use the old PAC structure to create your ticket (exclude PAC_ATTRIBUTES_INFO and PAC_REQUESTOR",
+          "takes_value": false
         },
         {
           "flag": "-duration",
@@ -4146,11 +4551,13 @@
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-user",
@@ -4178,7 +4585,8 @@
       "id": "67",
       "name": "tstool.py",
       "description": "Terminal Services manipulation tool.",
-      "path": "impacket/examples/tstool.py",
+      "path": "examples/tstool.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -4204,15 +4612,18 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-v",
-          "help": "Turn VERBOSE output ON"
+          "help": "Turn VERBOSE output ON",
+          "takes_value": false
         },
         {
           "flag": "-pid",
@@ -4228,19 +4639,23 @@
         },
         {
           "flag": "-logoff",
-          "help": "Forces sessions to logoff."
+          "help": "Forces sessions to logoff.",
+          "takes_value": false
         },
         {
           "flag": "-shutdown",
-          "help": "Shuts down the system."
+          "help": "Shuts down the system.",
+          "takes_value": false
         },
         {
           "flag": "-reboot",
-          "help": "Reboots after shutdown."
+          "help": "Reboots after shutdown.",
+          "takes_value": false
         },
         {
           "flag": "-poweroff",
-          "help": "Powers off after shutdown."
+          "help": "Powers off after shutdown.",
+          "takes_value": false
         },
         {
           "flag": "-title",
@@ -4248,11 +4663,13 @@
         },
         {
           "flag": "-control",
-          "help": "Request control of the session (default is view only)"
+          "help": "Request control of the session (default is view only)",
+          "takes_value": false
         },
         {
           "flag": "-prompt",
-          "help": "Request user permission (default is silent)"
+          "help": "Request user permission (default is silent)",
+          "takes_value": false
         },
         {
           "flag": "-file",
@@ -4264,11 +4681,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -4292,7 +4711,8 @@
       "id": "68",
       "name": "wmiexec.py",
       "description": "Executes a semi-interactive shell using Windows Management Instrumentation.",
-      "path": "impacket/examples/wmiexec.py",
+      "path": "examples/wmiexec.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -4310,19 +4730,23 @@
         },
         {
           "flag": "-nooutput",
-          "help": "whether or not to print the output (no SMB connection created)"
+          "help": "whether or not to print the output (no SMB connection created)",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-silentcommand",
-          "help": "does not execute cmd.exe to run given command (no output)"
+          "help": "does not execute cmd.exe to run given command (no output)",
+          "takes_value": false
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-codec"
@@ -4341,11 +4765,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -4373,7 +4799,8 @@
       "id": "69",
       "name": "wmipersist.py",
       "description": "Creates/Removes a WMI Event Consumer/Filter and link between both to execute Visual Basic based on the WQL filter or timer specified.",
-      "path": "impacket/examples/wmipersist.py",
+      "path": "examples/wmipersist.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -4391,11 +4818,13 @@
       "optional flags": [
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-com-version",
@@ -4415,11 +4844,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",
@@ -4435,7 +4866,8 @@
       "id": "70",
       "name": "wmiquery.py",
       "description": "Executes WQL queries and gets object descriptions using Windows Management Instrumentation.",
-      "path": "impacket/examples/wmiquery.py",
+      "path": "examples/wmiquery.py",
+      "implemented": false,
       "required flags": [
         {
           "flag": "target",
@@ -4453,11 +4885,13 @@
         },
         {
           "flag": "-debug",
-          "help": "Turn DEBUG output ON"
+          "help": "Turn DEBUG output ON",
+          "takes_value": false
         },
         {
           "flag": "-ts",
-          "help": "Adds timestamp to every logging output"
+          "help": "Adds timestamp to every logging output",
+          "takes_value": false
         },
         {
           "flag": "-com-version",
@@ -4469,11 +4903,13 @@
         },
         {
           "flag": "-no-pass",
-          "help": "don't ask for password (useful for -k)"
+          "help": "don't ask for password (useful for -k)",
+          "takes_value": false
         },
         {
           "flag": "-k",
-          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line"
+          "help": "Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line",
+          "takes_value": false
         },
         {
           "flag": "-aesKey",

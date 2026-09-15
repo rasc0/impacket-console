@@ -1,6 +1,14 @@
 name: Build and test Impacket-Console
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - "console/**"
+      - ".github/workflows/console-actions.yml"
+  pull_request:
+    paths:
+      - "console/**"
+      - ".github/workflows/console-actions.yml"
 
 jobs:
   test:
@@ -14,9 +22,12 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pytest rich
+        run: pip install pytest rich cmd2
 
-      - name: Run tests
-        run: pytest
-
+      # Scoped to console/tests so this only ever runs the console's own
+      # tests - a bare `pytest` from the repo root would also collect
+      # impacket's own test suite (tests/), which needs live network
+      # access and isn't what this workflow is for.
+      - name: Run console tests
+        run: pytest console/tests -v
 

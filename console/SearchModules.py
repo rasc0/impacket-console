@@ -19,12 +19,25 @@ def searchModule(modules, searchString):
     return results, len(results)
 
 # Search for module based on id
-def searchModuleId(modules, searchId ):
+def searchModuleId(modules, searchId):
+
+    searchId = str(searchId)
 
     for module in modules:
         if module["id"] == searchId:
             return module
-        else:
-            return None
+
+    return None
+
+# Exact (case-insensitive) match on module name, with or without the ".py" suffix
+def searchModuleName(modules, name):
+
+    name = name.lower()
+    if not name.endswith(".py"):
+        name += ".py"
+
+    for module in modules:
+        if module["name"].lower() == name:
+            return module
 
     return None

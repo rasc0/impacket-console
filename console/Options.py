@@ -2,21 +2,26 @@
 Options class for adaconsole.
 
 A blank-slate container for every unique flag across all impacket
-modules (see global_flags.py / impacket_modules.json for how this list
-was derived). All attributes default to None, so a fresh Options()
-instance represents "nothing set yet."
+modules. All attributes default to None, so a fresh Options() instance
+represents "nothing set yet."
 
-Dashes were converted to underscores, and one flag ("-6", used for
-IPv6 mode in a few scripts) got a "flag_" prefix since attribute names
-can't start with a digit. One merge happened during normalization:
-"output-file" and "output_file" are two scripts' different spellings
-of the same concept and now share a single "output_file" attribute.
+The attribute list below (between the GENERATED OPTIONS markers) is
+produced by generate_modules.py, which statically scans impacket's
+examples/*.py scripts for their argparse flags. Do not hand-edit that
+block - regenerate it instead after pulling upstream impacket changes:
+
+    python console/generate_modules.py
+
+Flag names are normalised to attribute names by FlagUtils.flag_to_attr:
+dashes become underscores, and a flag that starts with a digit (e.g.
+"-6", used for IPv6 mode in a few scripts) gets a "flag_" prefix since
+attribute names can't start with a digit.
 """
 
 
 class Options:
     def __init__(self):
-        self.flag_6 = None
+        # === GENERATED OPTIONS START ===
         self.A = None
         self.H = None
         self.a = None
@@ -42,9 +47,11 @@ class Options:
         self.auth_rpc = None
         self.auth_smb = None
         self.auth_transport = None
+        self.author_log = None
         self.b = None
-        self.base_dir = None
+        self.backup_path = None
         self.baseDN = None
+        self.base_dir = None
         self.basic = None
         self.bootkey = None
         self.brute_opnums = None
@@ -52,6 +59,7 @@ class Options:
         self.brute_versions = None
         self.c = None
         self.cert_outfile_path = None
+        self.certfile = None
         self.client_id = None
         self.client_interface_name = None
         self.codec = None
@@ -105,6 +113,7 @@ class Options:
         self.dump_gmsa = None
         self.dump_info_attr = None
         self.dump_laps = None
+        self.dump_pre2k = None
         self.duration = None
         self.e = None
         self.enable = None
@@ -123,16 +132,19 @@ class Options:
         self.file = None
         self.fileName = None
         self.filter = None
+        self.flag_6 = None
         self.force_forwardable = None
         self.format = None
         self.full = None
         self.groups = None
         self.guid = None
         self.guid_file = None
+        self.h = None
         self.hashes = None
         self.hashes_rpc = None
         self.hashes_smb = None
         self.hashes_transport = None
+        self.help = None
         self.history = None
         self.hive = None
         self.host = None
@@ -140,6 +152,7 @@ class Options:
         self.hp = None
         self.http_api_port = None
         self.http_port = None
+        self.https = None
         self.i = None
         self.icpr_ca_name = None
         self.identity = None
@@ -159,6 +172,7 @@ class Options:
         self.keep_relaying = None
         self.key = None
         self.keyName = None
+        self.keyfile = None
         self.keytab = None
         self.l = None
         self.ldapfilter = None
@@ -172,8 +186,8 @@ class Options:
         self.machine_hashes = None
         self.machine_only = None
         self.mask = None
-        self.max_connections = None
         self.maxRid = None
+        self.max_connections = None
         self.message = None
         self.method = None
         self.mode = None
@@ -181,11 +195,12 @@ class Options:
         self.mssql_port = None
         self.n = None
         self.name = None
+        self.named_pipe = None
         self.namespace = None
+        self.newPasswd = None
         self.new_owner = None
         self.new_owner_dn = None
         self.new_owner_sid = None
-        self.newPasswd = None
         self.newhashes = None
         self.newpass = None
         self.no_acl = None
@@ -218,9 +233,11 @@ class Options:
         self.of = None
         self.old_pac = None
         self.opnum_max = None
+        self.outfile = None
         self.output_file = None
         self.output_type = None
         self.outputfile = None
+        self.overflow = None
         self.p = None
         self.page = None
         self.password = None
@@ -231,9 +248,9 @@ class Options:
         self.port = None
         self.poweroff = None
         self.principal = None
+        self.principalType = None
         self.principal_dn = None
         self.principal_sid = None
-        self.principalType = None
         self.principals_allowed = None
         self.prompt = None
         self.protocol = None
@@ -248,9 +265,9 @@ class Options:
         self.readonly = None
         self.reboot = None
         self.recursive = None
-        self.remote_binary_name = None
         self.remoteSSWMI_local_path = None
         self.remoteSSWMI_remote_volume = None
+        self.remote_binary_name = None
         self.remove = None
         self.remove_mic = None
         self.remove_sign_seal = None
@@ -297,6 +314,7 @@ class Options:
         self.session = None
         self.session_id = None
         self.shadow_credentials = None
+        self.shadow_replace = None
         self.shadow_target = None
         self.share = None
         self.shareName = None
@@ -309,8 +327,8 @@ class Options:
         self.skip_sam = None
         self.skip_security = None
         self.skip_user = None
-        self.smb_port = None
         self.smb2support = None
+        self.smb_port = None
         self.so = None
         self.socks = None
         self.socks_address = None
@@ -328,6 +346,8 @@ class Options:
         self.t = None
         self.table = None
         self.target = None
+        self.targetRID = None
+        self.targetUser = None
         self.target_account = None
         self.target_dn = None
         self.target_domain = None
@@ -335,8 +355,6 @@ class Options:
         self.target_ip = None
         self.target_ou = None
         self.target_sid = None
-        self.targetRID = None
-        self.targetUser = None
         self.targets = None
         self.template = None
         self.tf = None
@@ -379,11 +397,11 @@ class Options:
         self.wh = None
         self.windows_auth = None
         self.xmlfile = None
+        # === GENERATED OPTIONS END ===
 
     # Load values in from file
     def setValuesFromFile(self, file):
         pass
-
 
     def serialiseToFile(self, file):
         pass

@@ -45,3 +45,26 @@ def module_with_non_string_values():
     return [
         {"id": 1, "name": "Row", "description": "Row with integer id"},
     ]
+
+
+""" MODULE RUNNER / MODULES.JSON-SHAPED FIXTURES"""
+
+@pytest.fixture
+def sample_module_spec():
+    """A minimal modules.json-shaped entry exercising every flag kind a
+    ModuleRunner has to handle: a required positional, an optional
+    value-taking flag, and an optional boolean (no-value) flag."""
+    return {
+        "id": "1",
+        "name": "SampleModule.py",
+        "description": "Sample module for tests",
+        "path": "examples/SampleModule.py",
+        "implemented": True,
+        "required flags": [
+            {"flag": "target", "help": "the target"},
+        ],
+        "optional flags": [
+            {"flag": "-dc-ip", "help": "DC IP address"},
+            {"flag": "-debug", "help": "debug output", "takes_value": False},
+        ],
+    }

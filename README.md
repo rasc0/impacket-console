@@ -9,6 +9,9 @@ The goal of this project is to create a msfconsole-like console for AD red-teami
 - Simple load the tool you want to use (e.g. GetUserSPNs)
 - "Set" your variables and fire
 
+TODO:
+- Persist options (i.e set the target IP with one module and keep it set for another)
+
 Down the line:
 - Docker version - run impacket on docker rather than with python on your machine
 - Search feature - e.g. "Kerberoast" will return the GetUserSPN module with the request flag
